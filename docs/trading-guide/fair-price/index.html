@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Fair Price Marking - Delta User Documentation</title>
+<link rel="stylesheet" href="../../../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../../../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../../../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../../../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item active">
+<a href="../../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item  active">
+<a href="index.html" class="navigation-list-link active">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item ">
+ <a href="../OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<nav class="breadcrumb-nav">
+<ol class="breadcrumb-nav-list">
+<li class="breadcrumb-nav-list-item"><a href="../../margin-trading-guide.html">Margin Trading Guide</a></li>
+<li class="breadcrumb-nav-list-item"><span>Fair Price Marking</span></li>
+</ol>
+</nav>
+<div id="main-content" class="page-content" role="main">
+<h1 id="fair-price-marking">Fair Price Marking</h1>
+<ol id="markdown-toc">
+<li><a href="index.html#fair-price-marking" id="markdown-toc-fair-price-marking">Fair Price Marking</a> <ol>
+<li><a href="index.html#calculation-of-fair-price-of-a-futures-contract" id="markdown-toc-calculation-of-fair-price-of-a-futures-contract">Calculation of Fair Price of a Futures Contract</a></li>
+<li><a href="index.html#impact-price" id="markdown-toc-impact-price">Impact Price</a></li>
+<li><a href="index.html#fair-basis-calculation" id="markdown-toc-fair-basis-calculation">Fair Basis Calculation</a></li>
+<li><a href="index.html#fair-price-marking-leading-into-settlement" id="markdown-toc-fair-price-marking-leading-into-settlement">Fair Price Marking Leading into Settlement</a></li>
+</ol>
+</li>
+</ol>
+<p>Leverage is inherent in derivative contracts, combined with high volatility of crypto-currencies can lead to unwarranted liquidations. Lack of liquidity could further exacerbate this situation as price swings in a derivatives contract relative to the underlying index could widen even further.</p>
+<p>To ensure a great trader experience, Delta Exchange marks all open position at Fair Price instead of Last Traded Price. The Fair Price has lesser volatility and is more resilient against attempts to manipulate market.</p>
+<p>It is worth noting that Fair Price marking is relevant only computation of Unrealized PnL and Liquidation price. Realized PnL is computed using actual trading prices and is thus not impacted by the Fair Price.</p>
+<h2 id="calculation-of-fair-price-of-a-futures-contract">Calculation of Fair Price of a Futures Contract</h2>
+<p>The price of a futures contract converges to the underlying index price at the time of contract maturity, i.e.</p>
+<script type="math/tex; mode=display">Futures\_Price = Underlying\_Index\_Price</script>
+<p>At all other times, the price of a futures contract broadly moves in tandem with the price of the Underlying Index, with the difference between the two referred to as basis, i.e.</p>
+<script type="math/tex; mode=display">Basis = Futures\_Price - Underlying\_Index\_Price</script>
+<p>Since the Underlying Index is the foundation of the futures contract, it is logical to assume that</p>
+<script type="math/tex; mode=display">Futures\_Fair\_Price = Underlying\_Index\_Price + Fair\_Basis</script>
+<p>The <script type="math/tex">Underlying\_Index\_Price</script> is obviously independent of the trading happening on Delta Exchange and is sourced in real-time from leading spot exchanges.</p>
+<h2 id="impact-price">Impact Price</h2>
+<p>To understand the computation of <script type="math/tex">Fair Basis</script>, we first need to introduce the notion of <script type="math/tex">Impact Price</script>. This price tries to estimate the price at which a typical long or short position (called Impact Position) in the futures contract can be entered at any given time.</p>
+<p>Impact Size, in terms of number is contracts to be traded, is provided in the <a href="../../../../index.html@p=22354.html">specifications</a> for each futures contract. It is easy to see that Impact Price is a function of: (a) Impact Size and (b) current state of the order book.</p>
+<script type="math/tex; mode=display">Impact\_Bid\_Price = Average\ fill\ price\ to\ execute\ a\ typical\ short\ trade</script>
+<script type="math/tex; mode=display">Impact\_Ask\_Price = Average\ fill\ price\ to\ execute\ a\ typical\ long\ trade</script>
+<script type="math/tex; mode=display">Impact\_Mid\_Price = Average\ of\ Impact\_Bid\_Price\ and\ Impact\_Ask\_Price</script>
+<h2 id="fair-basis-calculation">Fair Basis Calculation</h2>
+<p>We first compute an annualised fair value basis, <script type="math/tex">\%Annualised\_Basis</script>:</p>
+<script type="math/tex; mode=display">\%Annualised\_Basis = (Impact\_Mid\_Price/ Underlying\_Index\_Price - 1) * (365*86400/ time\_to\_expiry\_in\_sec)</script>
+<p><strong>Note that For perpetual contracts <script type="math/tex">time\_to\_expiry</script> is always 8 hours.</strong></p>
+<p><script type="math/tex">\%Annualised\_Basis</script> is computed only once 5 seconds. Further, in case at any time of update, market is illiquid, i.e.</p>
+<script type="math/tex; mode=display">(Impact\_Ask\_Price - Impact\_Bid\_Price) > Maintenance\_Margin</script>
+<p><script type="math/tex">\%Annualised\_Basis</script> is not updated.</p>
+<p>Next, <script type="math/tex">\%Fair\_Basis</script> is computed as the moving average of the 12 most recent values of <script type="math/tex">\%Annualised\_Basis</script>. To avoid anomalous values, the <script type="math/tex">\%Fair\_Basis</script> is bounded by certain hard limits, which can vary from contract to contract.</p>
+<p><script type="math/tex">Fair Basis</script> is computed using <script type="math/tex">\%Fair\_Basis</script></p>
+<script type="math/tex; mode=display">Fair\_Basis = Underlying\_Index\_Price * \%Fair\_Basis * (time\_to\_expiry\_in\_sec/ (365* 86400))</script>
+<p>Now, that we have the <script type="math/tex">Fair\_Basis</script>, the fair price of the futures (i.e. the mark price) can be easily computed:</p>
+<script type="math/tex; mode=display">Futures\_Fair\_Price = Underlying\_Index\_Price + Fair\_Basis</script>
+<p>It is worth noting that only live positions are marked using the Fair Price. Thus, unrealised PnL may swing with the Mark Price, realised PnL is determined using actual traded price and is unimpacted by Mark Price.</p>
+<h2 id="fair-price-marking-leading-into-settlement">Fair Price Marking Leading into Settlement</h2>
+<p>A Futures contract on Delta Exchange are settled on the <script type="math/tex">30</script> minute TWAP (time-weighted average price) of its Underlying Index. To ensure that at the time of settlement there are no under-margined positions, the transition from using <script type="math/tex">Underlying\_Index\_Price</script> to <script type="math/tex">TWAP\_Underlying\_Index\_Price</script> in the calculation of Mark Price is done gradually.</p>
+<p>When the settlement time of a contract is one hour away, we switch to a weighted average of <script type="math/tex">Underlying\_Index\_Price</script> and <script type="math/tex">TWAP\_Underlying\_Index\_Price</script> in Mark Price computation. At the time of switch, weight of <script type="math/tex">Underlying\_Index\_Price</script> is <script type="math/tex">100%</script> and weight of <script type="math/tex">TWAP\_Underlying\_Index\_Price</script> is <script type="math/tex">0%</script>. Over the next <script type="math/tex">30</script> minutes, these weights are changed every minute such that weights converge to 0% and 100% respectively. This means that in the last 30 minutes leading into contract settlement, it is <script type="math/tex">TWAP\_Underlying\_Index\_Price</script> that is used in the computation of the Mark Price. At contract settlement, <script type="math/tex">Fair Basis</script> is <script type="math/tex">0</script> and Mark Price converges to <script type="math/tex">TWAP\_Underlying\_Index\_Price</script>.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

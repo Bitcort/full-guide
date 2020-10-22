@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Futures Guide - Delta User Documentation</title>
+<link rel="stylesheet" href="../../../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../../../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../../../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../../../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item active">
+<a href="index.html" class="navigation-list-link active">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item ">
+<a href="../../trading-guide/fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../../trading-guide/trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<div id="main-content" class="page-content" role="main">
+<h1 id="futures-guide">Futures Guide</h1>
+<ol id="markdown-toc">
+<li><a href="index.html#futures-guide" id="markdown-toc-futures-guide">Futures Guide</a> <ol>
+<li><a href="index.html#futures-motivation--use-cases" id="markdown-toc-futures-motivation--use-cases">Futures: Motivation &amp; Use Cases</a></li>
+<li><a href="index.html#math-for-futures" id="markdown-toc-math-for-futures">Math for Futures</a></li>
+<li><a href="index.html#pnl-computation" id="markdown-toc-pnl-computation">PnL Computation</a></li>
+<li><a href="index.html#inverse-futures" id="markdown-toc-inverse-futures">Inverse Futures</a></li>
+<li><a href="index.html#understanding-leverage" id="markdown-toc-understanding-leverage">Understanding Leverage</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="futures-motivation--use-cases">Futures: Motivation &amp; Use Cases</h2>
+<p>A derivative is a financial security which derives its value from an underlying asset or group of assets. The derivative itself is a contract between two parties and its price is driven by fluctuations in the underlying asset.</p>
+<p>Futures is a type of derivative that is essentially an agreement between two parties to buy/ sell an asset (e.g. Ether) at a predetermined future date and price. There is a deterministic but complex relation between the price of the underlying asset and its Futures contract. However, simplistically, we can assume that both spot price and Futures price tend to move in the same direction.</p>
+<p><strong>Trading Futures vs. the underlying</strong></p>
+<p>Futures offer several advantages over trading the underlying asset directly. Futures ..</p>
+<ul>
+<li>
+<p>enable you to benefit from both price increases (long position) as well as declines (short position)</p>
+</li>
+<li>
+<p>provide financial leverage</p>
+</li>
+<li>
+<p>can be used to hedge price risk</p>
+</li>
+<li>
+<p>tend to incur smaller transaction fees</p>
+</li>
+</ul>
+<p><strong>Directional trades</strong></p>
+<p>View on the price of an underlying can be expressed via a Futures contract for it. Going long (buying) futures will generally lead to a profit if the price of the underlying rises. Conversely, shorting (selling) Futures will generally result in a profit if the price of the underlying declines.</p>
+<p><strong>Hedging</strong></p>
+<p>A Futures contract can be used to hedge the price risk of the underlying asset. Let’s say you own <script type="math/tex">1</script> BTC (Bitcoin). If you want to lock the current BTC price of <script type="math/tex">$8000</script>, then you can short sell <script type="math/tex">8000</script> BTC/ USD Futures (assuming each contract size is <script type="math/tex">1</script> USD). Once this hedge is in place, regardless of bitcoin price movement, the effective value of your position will remain constant at $8000.</p>
+<h2 id="math-for-futures">Math for Futures</h2>
+<p>The math behind Futures is better illustrated with an example. Let’s say, we would like to trade Ether-Bitcoin (ETH-BTC) Futures. We need to define a few parameters:</p>
+<p><strong>Underlying:</strong> This is the asset over which a Futures contract is defined. In our example the underlying is Ether.</p>
+<p><strong>Quote currency:</strong> This is the currency in which the price of the underlying is quoted. In our example, price of Ether is quoted in Bitcoin terms. Hence, quote currency is BTC.</p>
+<p><strong>Base currency:</strong> This is the currency in which the PnL of a Futures position is calculated. In our example, the base currency is same as the quote currency, i.e. Bitcoin. However, this need not always be true.</p>
+<p><strong>Multiplier:</strong> This refers to the quantity of the underlying that the two parties trading a single Futures contract agree to buy/ sell in future. If our ETH-BTC Futures contract entails agreement to buy/ sell m Ethers at a future date, then m is the multiplier.</p>
+<p>Given above, if you buy (or even sell) <script type="math/tex">n</script> ETH-BTC Futures contracts at <script type="math/tex">Fut\_EntryPrice</script>, then your overall position size (nominal exposure) is:</p>
+<script type="math/tex; mode=display">n *m* Fut\_EntryPrice \  (in \ BTC)</script>
+<p>To understand why this the position size consider this: the buyer of the Futures contract has agreed to buy <script type="math/tex">n*m</script> Ethers at contract expiry, with each Ether priced at <script type="math/tex">Fut\_EntryPrice</script> BTC. Thus, at the time of settlement, he will need to have <script type="math/tex">n*m*Fut\_EntryPrice</script> BTC to honor the agreement.</p>
+<p>However, to be able to enter into a Futures trade, you are not required to have resources equalling the position size. This is where financial leverage kicks in.</p>
+<p><strong>Margin%:</strong> This is the fraction of your position size that you are required to post as collateral when entering into a Futures trade. So, in our example, to buy/ sell <script type="math/tex">n</script> contracts, you need to have only:</p>
+<script type="math/tex; mode=display">n*m* Margin\% *  Fut\_EntryPrice \ (in \ BTC)</script>
+<p>This also means that maximum position size that you can afford is <script type="math/tex">1/Margin\%</script> times the collateral (in BTC) that you have available. Thus,</p>
+<script type="math/tex; mode=display">^1/(Margin\%) = Financial\ leverage</script>
+<h2 id="pnl-computation">PnL Computation</h2>
+<p><strong>Unrealised PnL</strong>
+For a <strong>long</strong> position in a Futures contract:</p>
+<script type="math/tex; mode=display">PnL = n*m*(Fut\_CurrentPrice - Fut\_EntryPrice) \ (in \  BTC)</script>
+<p>For a <strong>short</strong> position in a Futures contract:</p>
+<script type="math/tex; mode=display">PnL = - n*m*(Fut\_CurrentPrice - Fut\_EntryPrice) \ (in\  BTC)</script>
+<p>It is worth noting that your (realised or unrealised) profits and losses are adjusted from the margin you post. Profit on a Futures position add to the Margin (collateral). Conversely, loss erodes margin and you might need to top it up to continue holding your position.</p>
+<p><strong>Realised PnL</strong>
+In case of Futures, PnL can be realised either by exiting the position in market or via settlement process at the maturity of the contract</p>
+<p>Exit <strong>long</strong> position in market</p>
+<script type="math/tex; mode=display">PnL = n*m*(Fut\_ExitPrice - Fut\_EntryPrice) \ (in \ BTC)</script>
+<p>Exit <strong>long</strong> position via settlement</p>
+<script type="math/tex; mode=display">PnL = n*m*(Fut\_SettlementPrice - Fut\_EntryPrice) \ (in \ BTC)</script>
+<p>Exit <strong>short</strong> position in market</p>
+<script type="math/tex; mode=display">PnL = -n*m*(Fut\_ExitPrice - Fut\_EntryPrice)\  (in \ BTC)</script>
+<p>Exit <strong>short</strong> position via settlement</p>
+<script type="math/tex; mode=display">PnL = -n*m*(Fut\_SettlementPrice - Fut\_EntryPrice) \  (in \  BTC)</script>
+<p>Settlement price is determined at the maturity of the contract through a pre-defined method described in the <a href="https://delta.exchange/contracts/">contract specifications</a> . All open positions at the time of contract maturity are closed at the settlement price.</p>
+<h2 id="inverse-futures">Inverse Futures</h2>
+<p>The Futures contract discussed above are also known as <strong>Vanilla Futures</strong>. Inverse Futures are similar to Vanilla Futures, but only with one key distinction: the relationship between Futures price and position PnL is sort of inverted.</p>
+<p>For a <strong>long</strong> position in an inverse Futures contract</p>
+<script type="math/tex; mode=display">PnL = n*m*(1/ Fut\_EntryPrice - 1/ Fut\_CurrentPrice) \ (in \ BTC)</script>
+<p>For a <strong>short</strong> position in an inverse Futures contract</p>
+<script type="math/tex; mode=display">PnL = - n*m*(1/ Fut\_EntryPrice - 1/ Fut\_CurrentPrice) \ (in \  BTC)</script>
+<h2 id="understanding-leverage">Understanding Leverage</h2>
+<p>Leverage has a multiplier effect on your trading returns. This is best illustrated with an example. Let’s say you have <script type="math/tex">$100</script>, and you think BTC price is likely to go up. Currently, <script type="math/tex">1</script> BTC = <script type="math/tex">$10,000</script></p>
+<p><strong>No Leverage (trade the underlying)</strong></p>
+<p>Buy <script type="math/tex">0.01</script> BTC using your <script type="math/tex">$100</script>. If after a week, BTC rises by <script type="math/tex">10%</script> to <script type="math/tex">$11,000</script> , your position in BTC is now worth <script type="math/tex">$110</script> and your PnL is <script type="math/tex">$10</script>. And, the return on your equity (RoE), <script type="math/tex">$100</script> in this case is:</p>
+<script type="math/tex; mode=display">RoE_{NoLeverage} = PnL / Equity</script>
+<script type="math/tex; mode=display">= \$10/\$100 = 10\%</script>
+<p><strong>With Leverage (trade the Futures contract)</strong></p>
+<p>Long USD - BTC Futures contract using $100 as the margin money. Let’s assume that the contract size is <script type="math/tex">0.01</script> BTC and Margin% is <script type="math/tex">10%</script>. This means that $100 as margin is sufficient for <script type="math/tex">10</script> contracts.</p>
+<p>Let’s further assume that the Futures contract price broadly follows BTC price movement. Now, we can approximate the PnL as</p>
+<script type="math/tex; mode=display">PnL = 10 * 0.01 * (11000 - 10000) = \$100</script>
+<p>So, in this case, we have generated a PnL of <script type="math/tex">$100</script> with an equity of <script type="math/tex">$100</script>.</p>
+<script type="math/tex; mode=display">RoE_{Leverage} = \$100/ \$100 = 100\%</script>
+<p>It is also easy to see that,</p>
+<script type="math/tex; mode=display">RoE_{Leverage} = RoE_{NoLeverage}/ Margin% = RoE_{NoLeverage}*Financial\_Leverage</script>
+<p>Do note that leverage is a double edged sword. Just as it will amplify your profits, it will also have the same multiplier effect on your losses.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

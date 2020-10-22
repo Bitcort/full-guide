@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Allowed Trading Bands - Delta User Documentation</title>
+<link rel="stylesheet" href="../../../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../../../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../../../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../../../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item active">
+<a href="../../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item ">
+<a href="../fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item  active">
+<a href="index.html" class="navigation-list-link active">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<nav class="breadcrumb-nav">
+<ol class="breadcrumb-nav-list">
+<li class="breadcrumb-nav-list-item"><a href="../../margin-trading-guide.html">Margin Trading Guide</a></li>
+<li class="breadcrumb-nav-list-item"><span>Allowed Trading Bands</span></li>
+</ol>
+</nav>
+<div id="main-content" class="page-content" role="main">
+<h1 id="allowed-trading-band">Allowed Trading Band</h1>
+<p>To prevent market manipulation as well as idiosyncratic price moves trading on Delta Exchange can take place only within the allowed trading band. This band is defined as 2.5% range around the current <a href="../fair-price/index.html#fair-price-marking">Mark Price</a> and is applicable depending up on the direction of a trade. For buy trades, the upper bound (Max Price) of the trading band is applicable. This means any buy order cannot execute at a price greater than Max Price. Similarly, for sell orders, the lower bound (Min Price) of the trading band is applicable. This implies that the execution price of a sell order cannot be less than Min Sell.</p>
+<p>Please do note that trading bands are not applicable to liquidation orders.</p>
+<h2 id="impact-of-the-trading-band-on-various-types-of-orders">Impact of the Trading Band on various types of orders</h2>
+<ul>
+<li><strong><a href="../OrderTypes/index.html#market-orders">Market orders</a>:</strong> Any part of your market order that will breach the trading band on execution will be converted into a limit order with price equal to the max (for buy orders) or min (for sell orders) allowed price.</li>
+<li><strong><a href="../OrderTypes/index.html#limit-orders">Limit orders</a>:</strong> If the price of your buy limit order exceeds the Max Price, the price of the order will be automatically set to the max buy price. Conversely, if the price of your sell limit order is below the Min Price, the price of the order will be automatically set to the min sell price.</li>
+<li><strong><a href="../OrderTypes/index.html#stop-orders">Stop market orders</a>:</strong> Once triggered, a stop market order will behave in the exact same manner as a market order. This means that part or all of the order could be converted into a limit order if its execution will breach the trading band in force at the time the stop market order is triggered.</li>
+<li><strong><a href="../OrderTypes/index.html#stop-orders">Stop limit orders</a>:</strong> Once triggered, a stop limit order will behave in the exact same manner as a limit order. This means that the limit price of the order may be changed in accordance with the trading band in force at the time the stop limit order is triggered.</li>
+<li><strong><a href="../OrderTypes/index.html#bracket-orders">Bracket orders</a>:</strong> Bracket orders are akin to two stop market orders (a take-profit order and a stoploss order) wherein triggering of one order cancels the another. Once one of the orders in a bracket order is triggered, it behaves in the exact same manner as a stop market order.</li>
+</ul>
+<h2 id="changing-behaviour-of-market-orders-using-order-validity-attributes">Changing behaviour of market orders using order validity attributes</h2>
+<p><a href="../OrderTypes/index.html#order-validity-attributes">Order validity attributes</a> are also known as time in force flags. The default time in force flag for market orders as well as stop market orders is GTC (Good till cancelled). Traders using the website do not have the option to changing this flag. However, if you are trading using APIs, then you have the option to place IOC (immediate or cancel) market order and stop market orders. When you use an IOC flag, any part of the market (or stop market) order that will breach the trading band will be cancelled.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

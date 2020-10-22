@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Margin Trading Guide - Delta User Documentation</title>
+<link rel="stylesheet" href="../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item">
+<a href="tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item active">
+<a href="margin-trading-guide.html" class="navigation-list-link active">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item ">
+<a href="trading-guide/fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item ">
+ <a href="trading-guide/OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="trading-guide/trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<div id="main-content" class="page-content" role="main">
+<h1 id="trade-life-cycle">Trade Life Cycle</h1>
+<ol id="markdown-toc">
+<li><a href="margin-trading-guide.html#trade-life-cycle" id="markdown-toc-trade-life-cycle">Trade Life Cycle</a> <ol>
+<li><a href="margin-trading-guide.html#funding-exchange-wallet" id="markdown-toc-funding-exchange-wallet">Funding exchange wallet</a></li>
+<li><a href="margin-trading-guide.html#currency-conversion" id="markdown-toc-currency-conversion">Currency conversion</a></li>
+<li><a href="margin-trading-guide.html#placing-an-order" id="markdown-toc-placing-an-order">Placing an order</a></li>
+<li><a href="margin-trading-guide.html#margin--pnl-calculations" id="markdown-toc-margin--pnl-calculations">Margin &amp; PnL Calculations</a></li>
+<li><a href="margin-trading-guide.html#fair-price-marking" id="markdown-toc-fair-price-marking">Fair Price Marking</a></li>
+<li><a href="margin-trading-guide.html#settlement" id="markdown-toc-settlement">Settlement</a></li>
+</ol>
+</li>
+</ol>
+<h2 id="funding-exchange-wallet">Funding exchange wallet</h2>
+<p>Bitcoin is the only funding currency on Delta Exchange. This means that you can deposit bitcoins to your Delta wallet and withdraw only bitcoins from your Delta wallet. After logging on to Delta Exchange, you need to go to your <a href="../../app/account.html">Account Page</a> to get your bitcoin deposit address and to learn how to withdraw bitcoin from Delta Exchange.</p>
+<h2 id="currency-conversion">Currency conversion</h2>
+<p>Even though bitcoin is the only funding currency on Delta Exchange, not all futures contracts are settled in bitcoin. For example, we have stablecoin-settled contracts where the margining and settlement happens in USDC. Therefore, you’d need USDC for trading these futures contracts. Since we currently don’t support deposit/ withdrawal of USDC (or for that matter any other crypto apart from bitcoin), we have provided a <strong>currency converter tool</strong> that enables users to change bitcoin to the desired cryptocurrency.</p>
+<p><img src="../assets/images/CurrencyConverter1.jpg" alt="image" title="Delta Exchange Currency Converter" /></p>
+<p>It is worth noting that the exchange rate offered in the currency conversion is in line with the prevailing rates at the top spot exchanges. Further, currency conversion doesn’t attract any trading fees.</p>
+<h2 id="placing-an-order">Placing an order</h2>
+<p>Orders can be placed in Place Order Panel in the trading dashboard. We support both basic order types (e.g. limit order and market orders) as well as several advanced order types (e.g. Stop orders and bracket orders). Details of the all the supported order types are available <a href="trading-guide/OrderTypes/index.html">here</a></p>
+<h2 id="margin--pnl-calculations">Margin &amp; PnL Calculations</h2>
+<p>A new order is allowed to be submitted to the exchange only if the trader has sufficient balance available to reserve the order margin. Order margin computation happens in one of the two ways:</p>
+<ul>
+<li>
+<p>Trader doesn’t have an existing position in the contract: the system computes the initial margin that would be required if this position is acquired. This is the amount that is blocked as order margin.</p>
+</li>
+<li>
+<p>Trader has an existing position in the contract: in this case, the system computes the margin required for the updated overall position after the placed order has been executed. The difference between this computed margin requirement and the current position margin is what is additionally needed for this order. This is the amount that is block as order margin.</p>
+</li>
+</ul>
+<p>Details on the various types of margins and their calculations are available <a href="trading-guide/margin-explainer/index.html#margining-explainer">here</a>.</p>
+<h2 id="fair-price-marking">Fair Price Marking</h2>
+<p>Existing positions on Delta are marked at <a href="trading-guide/fair-price/index.html#fair-price-marking">fair Price</a>. This means that your unrealised PnL and hence the current value of margin allocated to a particular position are a function of the marked price. PnL calculations are illustrated with examples in the <a href="trading-guide/PnL-Math/index.html#profit-loss-math">PnL Math</a> section.</p>
+<h2 id="settlement">Settlement</h2>
+<p>You can square off a position in a derivatives contract in the exchange. Position that are held till maturity are cash settled at a price that is computed using the settlement method described in the <a href="https://wwww.delta.exchange/contracts">contract specifications</a>.</p>
+<hr>
+<h2 class="text-delta">Table of contents</h2>
+<ul>
+<li>
+<a href="trading-guide/fair-price/index.html">Fair Price Marking</a>
+</li>
+<li>
+<a href="trading-guide/margin-explainer/index.html">Margin Explainer</a>
+</li>
+<li>
+<a href="trading-guide/OrderTypes/index.html">Order Types</a>
+</li>
+<li>
+<a href="trading-guide/Leverage/index.html">Leverage</a>
+</li>
+<li>
+<a href="trading-guide/PnL-Math/index.html">Profit Loss Math</a>
+</li>
+<li>
+<a href="trading-guide/automargin/index.html">Auto Margin Top-up</a>
+</li>
+<li>
+<a href="trading-guide/Liquidation/index.html">Liquidation</a>
+</li>
+<li>
+<a href="trading-guide/ADL/index.html">Auto-Deleveraging</a>
+</li>
+<li>
+<a href="trading-guide/trading-bands/index.html">Allowed Trading Bands</a>
+</li>
+<li>
+<a href="trading-guide/market-disruption/index.html">Market Disruption</a>
+</li>
+<li>
+<a href="trading-guide/trade-annulment/index.html">Trade Annulment</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Auto Margin Top-up - Delta User Documentation</title>
+<link rel="stylesheet" href="../../../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../../../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../../../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../../../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item active">
+<a href="../../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item ">
+<a href="../fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item  active">
+<a href="index.html" class="navigation-list-link active">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<nav class="breadcrumb-nav">
+<ol class="breadcrumb-nav-list">
+<li class="breadcrumb-nav-list-item"><a href="../../margin-trading-guide.html">Margin Trading Guide</a></li>
+<li class="breadcrumb-nav-list-item"><span>Auto Margin Top-up</span></li>
+</ol>
+</nav>
+<div id="main-content" class="page-content" role="main">
+<h1 id="auto-margin-top-up">Auto Margin Top-up</h1>
+<p><a href="../margin-explainer/index.html#margining-explainer">Segregated Margin</a> is the default margining mode on Delta Exchange. This means that an open position has access to only the margin assigned to that position. Consequently, an open position may go into liquidation if the position margin erodes, even if there is sufficient balance available in a user’s account. This behaviour can be modified through the use of <strong>Auto Margin Top-up</strong>.</p>
+<p>Auto Margin top-up is a feature that enables traders to automatically add margin to open positions in order to avoid liquidation. If Auto Margin Top-up is enabled for a position, whenever the position is about to go into liquidation Position Margin is replenished.</p>
+<p>Recall that a position goes into <a href="../Liquidation/index.html#liquidation">liquidation</a> when the Remaining Position Margin (i.e. Initial Margin - Unrealised Losses) is equal to or lower than the Maintenance Margin. The quantum by which margin for a position is topped up each time is computed as follows:</p>
+<ul>
+<li><strong>For contracts where maximum leverage is 100x:</strong> margin added to the position is equal to (minimum Initial Margin - Maintenance Margin), where minimum Initial Margin is the margin required to open the position at the highest allowed leverage.</li>
+<li><strong>For contracts where maximum leverage is &lt;100x:</strong> margin added to the position is equal to 0.5 times (minimum Initial Margin - Maintenance Margin), where minimum Initial Margin is the margin required to open the position at the highest allowed leverage.</li>
+</ul>
+<p>If the Available Balance is less than the amount required for the top-up, then all of the Available Balance will be used to replenish the margin of the position. It is also important to note that Auto Margin Top-up cannot convert currency on its own and can draw margin only it is available in the settlement currency. For example, if the position that is about to go into liquidation required USDC margin and you only have BTC in your available balance, margin replenishment will fail.</p>
+<h2 id="how-to-activate-deactivate-auto-margin-top-up">How to activate/ deactivate Auto Margin Top-up</h2>
+<p>Auto Margin Top-up can be enabled/ disabled by toggling a switch which is available with the entry of which open position. You also have the option to have Auto Margin Top-up activated by default for all positions you acquire. This can be enabled by checking Auto-margin Top-up option in the <a href="../../../../app/account/preferences.html">preferences section</a>.</p>
+<p><img src="../../../assets/images/automarginswitch.jpg" alt="image" title="Auto Margin Top-up On/Off Switch" /></p>
+<h2 id="how-is-auto-margin-top-up-different-from-cross-margin">How is Auto Margin Top-up different from Cross Margin</h2>
+<p>In Cross Margin approach, margin is shared between open positions. At any time, the margin assigned to a position is equal to the minimum maintenance margin (i.e. position leverage is always the highest allowed). Whenever needed, a position draws more margin from the Available Balance to avoid liquidation.</p>
+<p>Segregated Margin plus Auto Margin Top-up has similar properties as well but with two key differences:</p>
+<ul>
+<li>Unlike Cross Margin, you have the flexibility to open and maintain your position at a leverage of your choice</li>
+<li>In Cross Margin, margin drawn by a position to avoid liquidation will be released automatically if the position swings into profit. The same however will not happen automatically in the case of Segregated Margin plus Auto Margin Top-up. Once margin is added to a position, it can only be withdrawn manually.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

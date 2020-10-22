@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  
+
+  <title>Margin Explainer - Delta User Documentation</title>
+  <link rel="stylesheet" href="../../assets/css/just-the-docs.css">
+
+  
+
+  
+    <script type="text/javascript" src="../../assets/js/vendor/lunr.min.js"></script>
+  
+  <script type="text/javascript" src="../../assets/js/just-the-docs.js"></script>
+  
+  <script type="text/javascript" async
+    src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+
+  <link rel="apple-touch-icon" href="../../assets/images/favicon.png" type="image/png">
+  <link rel="shortcut icon" href="../../assets/images/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+  <div class="page-wrap">
+    <div class="side-bar" style="background-color: #19222d;">
+      <a href="../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+        <!-- Delta User Documentation -->
+        <img src="../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+      </a>
+      <span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+      <div class="navigation main-nav js-main-nav">
+        <nav role="navigation" aria-label="Main navigation">
+  <ul class="navigation-list">
+    
+    
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="../../index.html" class="navigation-list-link">Getting Started</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="../tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="../tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+          <li class="navigation-list-item">
+            
+            <a href="../tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+            
+          </li>
+        
+      
+    
+      
+        
+          <li class="navigation-list-item active">
+            
+            <a href="../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+            
+              
+              <ul class="navigation-list-child-list ">
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item  active">
+                      
+                      <a href="margin-explainer/index.html" class="navigation-list-link active">Margin Explainer</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="OrderTypes/index.html" class="navigation-list-link">Order Types</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="Leverage/index.html" class="navigation-list-link">Leverage</a>
+                      
+                    </li>
+                  
+                
+                  
+                
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+                      
+                    </li>
+                  
+                
+                  
+                    <li class="navigation-list-item ">
+                      
+                      <a href="trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+                      
+                    </li>
+                  
+                
+              </ul>
+            
+          </li>
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+      
+        
+      
+    
+  </ul>
+</nav>
+
+      </div>
+      <footer role="contentinfo" class="site-footer">
+        <!-- <p class="text-small text-grey-dk-000 mb-0">This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll.</p> -->
+        <a href="https://twitter.com/Delta_Exchange">
+          <img src="../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+        </a>
+        <a href="https://github.com/delta-exchange">
+          <img src="../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+        </a>
+        <a href="https://t.me/deltaexchat">
+          <img src="../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+        </a>
+        <a href="https://medium.com/delta-exchange">
+          <img src="../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+        </a>
+        <a href="https://www.facebook.com/deltaexchg">
+          <img src="../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+        </a>
+      </footer>
+    </div>
+    <div class="main-content-wrap js-main-content" tabindex="0">
+      <div class="page-header">
+        <div class="main-content">
+          
+          <div class="search js-search">
+            <div class="search-input-wrap">
+              <input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+              <svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z"/><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z"/></g></svg>
+            </div>
+            <div class="js-search-results search-results-wrap"></div>
+          </div>
+          
+          
+            <ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+              
+                <li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+              
+            </ul>
+          
+        </div>
+      </div>
+      <div class="main-content">
+        
+          
+            <nav class="breadcrumb-nav">
+              <ol class="breadcrumb-nav-list">
+                
+                  <li class="breadcrumb-nav-list-item"><a href="../margin-trading-guide.html">Margin Trading Guide</a></li>
+                
+                <li class="breadcrumb-nav-list-item"><span>Margin Explainer</span></li>
+              </ol>
+            </nav>
+          
+        
+        <div id="main-content" class="page-content" role="main">
+          <h1 id="margining-explainer">Margining Explainer</h1>
+
+<ol id="markdown-toc">
+  <li><a href="margin-explainer.1.html#margining-explainer" id="markdown-toc-margining-explainer">Margining Explainer</a>    <ol>
+      <li><a href="margin-explainer.1.html#what-is-margin" id="markdown-toc-what-is-margin">What is Margin</a></li>
+      <li><a href="margin-explainer.1.html#risk-limits-margin-requirement-vs-position-size" id="markdown-toc-risk-limits-margin-requirement-vs-position-size">Risk Limits: Margin Requirement vs. Position Size</a></li>
+      <li><a href="margin-explainer.1.html#isolated-margin" id="markdown-toc-isolated-margin">Isolated Margin</a></li>
+      <li><a href="margin-explainer.1.html#reserved-margin-computation" id="markdown-toc-reserved-margin-computation">Reserved Margin Computation</a></li>
+      <li><a href="margin-explainer.1.html#impact-of-order-cancellations-on-margin" id="markdown-toc-impact-of-order-cancellations-on-margin">Impact of order cancellations on margin</a></li>
+    </ol>
+  </li>
+</ol>
+
+<h2 id="what-is-margin">What is Margin</h2>
+
+<p>Margin is the collateral that you need to post when entering into a leveraged derivatives contract. The amount required to enter into a new position is referred to as <strong>Initial Margin</strong>. The Initial Margin for a position depends up on both the position size and the selected leverage.</p>
+
+<p>If the trade against you, the unrealised loss in your position is adjusted against the initially posted margin. When the remaining margin (Initial Margin - Unrealised Loss) goes below <strong>Maintenance Margin</strong>, <a href="https://delta-exchange.github.io/user-guide/docs/trading-guide/Liquidation/#liquidation">liquidation process</a> is triggered.</p>
+
+<h2 id="risk-limits-margin-requirement-vs-position-size">Risk Limits: Margin Requirement vs. Position Size</h2>
+
+<p>The Initial Margin and Maintenance margin requirements for any contract are increased as the position size increases. Increasing the margin requirement helps to ensure orderly liquidation of large positions and reduces the incidences of <a href="https://delta-exchange.github.io/user-guide/docs/trading-guide/ADL">auto-deleveraging</a>.</p>
+
+<p>Margin requirement remains flat till a certain position size (Position Threshold). Once position size crosses this threshold, margin requirement increases linearly with position size.</p>
+
+<p><img src="https://delta-exchange.github.io/user-guide/assets/images/margin_chart.jpg" alt="image" title="Change in margin requirement with position size" /></p>
+
+<p>When <strong>Position size is less than or equal to Position Threshold</strong>:</p>
+
+<script type="math/tex; mode=display">Initial\ Margin\% = Initial\ Margin\%_{MIN}</script>
+
+<script type="math/tex; mode=display">Maintenance\ Margin\% = Maintenance\ Margin\%_{MIN}</script>
+
+<p>and, when <strong>Position size is greater than Position Threshold</strong>:</p>
+
+<script type="math/tex; mode=display">Initial\ Margin\% = Initial\ Margin\%_{MIN} + Slope_{IM} * (Position\ Size - Position\ Threshold )</script>
+
+<script type="math/tex; mode=display">Maintenance\ Margin\% = Maintenance\ Margin\%_{MIN} + Slope_{MM} * (Position\ Size - Position\ Threshold )</script>
+
+<p>The values of <script type="math/tex">Initial\ Margin\%_{MIN}</script>, <script type="math/tex">Maintenance\ Margin\%_{MIN}</script>, Position Threshold and Slope vary from contract to contract and are available in the <a href="../../../contracts.1.html">contract specifications</a>.</p>
+
+<h2 id="isolated-margin">Isolated Margin</h2>
+
+<p>Delta Exchange follows an Isolated Margin approach in which margin is explicitly assigned to each position and is not shared across positions. However, cross-margin like functionalities can be acheived by enabling <a href="https://delta-exchange.github.io/user-guide/docs/trading-guide/automargin">auto margin top up</a>.</p>
+
+<p>A position is specific to a particular contract. Thus, for each contract, two margin sub-accounts are maintained:</p>
+
+<ul>
+  <li>
+    <p><strong>Position Margin:</strong> Margin allocated to all existing (may include multiple long/ short positions) in given derivatives contract</p>
+  </li>
+  <li>
+    <p><strong>Order Margin:</strong> Margin allocated to all open orders in a given derivatives contract</p>
+  </li>
+</ul>
+
+<p>It is worth noting that Unrealized PnL is not factored into Position Margin or Order Margin.</p>
+
+<p>Position Margins and Order Margins are allocated from your Wallet Balance. Thus, at any time, the amount that remains unallocated is what is available for placing a new order. This is referred to as Available Balance.</p>
+
+<script type="math/tex; mode=display">Available\  Balance = Wallet\  Balance - (Position\  Margin + Order\  Margin)</script>
+
+<p>Everytime a new order is placed, the system does three things:</p>
+
+<ol>
+  <li>computes the Reservation margin for this new order,</li>
+  <li>checks whether <script type="math/tex">% <![CDATA[
+Reservation \ Margin <= Available \ Balance %]]></script>, and</li>
+  <li>if <script type="math/tex">2</script> holds, then transfer Reservation Margin amount from Available Balance to the Order Margin of the contract.</li>
+</ol>
+
+<h2 id="reserved-margin-computation">Reserved Margin Computation</h2>
+
+<p>Initial Margin (IM) requirements for a standalone order are as follows:</p>
+<ul>
+  <li>Buy limit order</li>
+</ul>
+
+<script type="math/tex; mode=display">IM = (Initial\ Margin\% * \#Contracts * Multiplier * Limit\_Bid\_Price)</script>
+
+<ul>
+  <li>Buy market order</li>
+</ul>
+
+<script type="math/tex; mode=display">IM = (InitialMargin\% * \#Contracts * Multiplier * MarkPrice)</script>
+
+<ul>
+  <li>Sell limit order</li>
+</ul>
+
+<script type="math/tex; mode=display">IM = (InitialMargin\% * \#Contracts * Multiplier * Max (Limit\ Offer\ Price, BestBid)</script>
+
+<ul>
+  <li>Sell market order</li>
+</ul>
+
+<script type="math/tex; mode=display">IM = (InitialMargin\% * \#Contracts * Multiplier * Max (MarkPrice, BestBid)</script>
+
+<p>Now, if there are existing positions/ open orders in the contract, then the Initial Margin requirement for the new combination of position and open orders is recomputed. For this computation, positions or orders on opposite side are netted in such a manner that for two offsetting orders, margin is reserved only once.</p>
+
+<p>Reserved  Margin is then the difference of the Initial Margin requirement for the combined position (existing + new order) and the Position Margin and Order Margin currently allocated to the derivative contract.</p>
+
+<h2 id="impact-of-order-cancellations-on-margin">Impact of order cancellations on margin</h2>
+
+<p>In a given contract, Order Margin account contains margin blocked for all the current open orders. If one or more of these open orders is cancelled, the Initial Margin requirement for the remaining open orders and existing orders is recomputed. The new Initial Margin requirement will either be same as earlier or lower. In the latter case, excess margin is released.</p>
+
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<title>Order Types - Delta User Documentation</title>
+<link rel="stylesheet" href="../../../assets/css/just-the-docs.css">
+<script type="text/javascript" src="../../../assets/js/vendor/lunr.min.js"></script>
+<script type="text/javascript" src="../../../assets/js/just-the-docs.js"></script>
+<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+<link rel="apple-touch-icon" href="../../../assets/images/favicon.png" type="image/png">
+<link rel="shortcut icon" href="../../../assets/images/favicon.png" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="page-wrap">
+<div class="side-bar" style="background-color: #19222d;">
+<a href="../../../../index.html" class="site-title fs-6 lh-tight" style="padding-top: 10px; background-color: #19222d;">
+
+<img src="../../../../wp-content/uploads/2018/10/logo-light.png" style="max-width: 125px;" alt="">
+</a>
+<span class="fs-3"><button class="js-main-nav-trigger navigation-list-toggle btn btn-outline" type="button" data-text-toggle="Hide">Menu</button></span>
+<div class="navigation main-nav js-main-nav">
+<nav role="navigation" aria-label="Main navigation">
+<ul class="navigation-list">
+<li class="navigation-list-item">
+<a href="../../../index.html" class="navigation-list-link">Getting Started</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/futures-guide/index.html" class="navigation-list-link">Futures Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/perpetual-contracts/index.html" class="navigation-list-link">Perpetual Contracts Guide</a>
+</li>
+<li class="navigation-list-item">
+<a href="../../tutorials/move-contracts/index.html" class="navigation-list-link">MOVE Contracts Guide</a>
+</li>
+<li class="navigation-list-item active">
+<a href="../../margin-trading-guide.html" class="navigation-list-link">Margin Trading Guide</a>
+<ul class="navigation-list-child-list ">
+<li class="navigation-list-item ">
+<a href="../fair-price/index.html" class="navigation-list-link">Fair Price Marking</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../margin-explainer/index.html" class="navigation-list-link">Margin Explainer</a>
+</li>
+<li class="navigation-list-item  active">
+<a href="index.html" class="navigation-list-link active">Order Types</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Leverage/index.html" class="navigation-list-link">Leverage</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../PnL-Math/index.html" class="navigation-list-link">Profit Loss Math</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../automargin/index.html" class="navigation-list-link">Auto Margin Top-up</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../Liquidation/index.html" class="navigation-list-link">Liquidation</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../ADL/index.html" class="navigation-list-link">Auto-Deleveraging</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trading-bands/index.html" class="navigation-list-link">Allowed Trading Bands</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../market-disruption/index.html" class="navigation-list-link">Market Disruption</a>
+</li>
+<li class="navigation-list-item ">
+<a href="../trade-annulment/index.html" class="navigation-list-link">Trade Annulment</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav>
+</div>
+<footer role="contentinfo" class="site-footer">
+
+<a href="https://twitter.com/Delta_Exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/twitter.svg">
+</a>
+<a href="https://github.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/cat.svg">
+</a>
+<a href="https://t.me/deltaexchat">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/telegram.svg">
+</a>
+<a href="https://medium.com/delta-exchange">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/medium.svg">
+</a>
+<a href="https://www.facebook.com/deltaexchg">
+<img src="../../../../wp-content/themes/twentyseventeen-child/img/facebook.svg">
+</a>
+</footer>
+</div>
+<div class="main-content-wrap js-main-content" tabindex="0">
+<div class="page-header">
+<div class="main-content">
+<div class="search js-search">
+<div class="search-input-wrap">
+<input type="text" class="js-search-input search-input" tabindex="0" placeholder="Search Delta User Documentation" aria-label="Search Delta User Documentation" autocomplete="off">
+<svg width="14" height="14" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg" class="search-icon"><title>Search</title><g fill-rule="nonzero"><path d="M17.332 20.735c-5.537 0-10-4.6-10-10.247 0-5.646 4.463-10.247 10-10.247 5.536 0 10 4.601 10 10.247s-4.464 10.247-10 10.247zm0-4c3.3 0 6-2.783 6-6.247 0-3.463-2.7-6.247-6-6.247s-6 2.784-6 6.247c0 3.464 2.7 6.247 6 6.247z" /><path d="M11.672 13.791L.192 25.271 3.02 28.1 14.5 16.62z" /></g></svg>
+</div>
+<div class="js-search-results search-results-wrap"></div>
+</div>
+<ul class="list-style-none text-small mt-md-1 mb-md-1 pb-4 pb-md-0 js-aux-nav aux-nav">
+<li class="d-inline-block my-0"><a href="https://delta.exchange/app">Back To Trading</a></li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<nav class="breadcrumb-nav">
+<ol class="breadcrumb-nav-list">
+<li class="breadcrumb-nav-list-item"><a href="../../margin-trading-guide.html">Margin Trading Guide</a></li>
+<li class="breadcrumb-nav-list-item"><span>Order Types</span></li>
+</ol>
+</nav>
+<div id="main-content" class="page-content" role="main">
+<ol id="markdown-toc">
+<li><a href="index.html#order-types" id="markdown-toc-order-types">Order Types</a> <ol>
+<li><a href="index.html#limit-orders" id="markdown-toc-limit-orders">Limit Orders</a></li>
+<li><a href="index.html#market-orders" id="markdown-toc-market-orders">Market Orders</a></li>
+<li><a href="index.html#stop-orders" id="markdown-toc-stop-orders">Stop Orders</a></li>
+<li><a href="index.html#bracket-orders-deprecated" id="markdown-toc-bracket-orders-deprecated">Bracket Orders (deprecated)</a></li>
+</ol>
+</li>
+<li><a href="index.html#advanced-attributes-for-orders" id="markdown-toc-advanced-attributes-for-orders">Advanced Attributes for Orders</a> <ol>
+<li><a href="index.html#order-validity-attributes" id="markdown-toc-order-validity-attributes">Order Validity Attributes</a></li>
+<li><a href="index.html#order-execution-attributes" id="markdown-toc-order-execution-attributes">Order Execution Attributes</a></li>
+</ol>
+</li>
+</ol>
+<h1 id="order-types">Order Types</h1>
+<p>We currently support the following types of orders</p>
+<h2 id="limit-orders">Limit Orders</h2>
+<p>A limit order is an order to buy or sell a specified number of futures contracts at a specified price. A limit order will only ever fill at the specified price or better price. Limit orders trade-off guaranteed execution for lower trading costs.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User inputs: Quantity, Limit Price
+Limit order example
+Quantity = 50 contracts
+Limit price = 4000
+Direction = Buy
+</code></pre></div></div>
+<p><em>A buy order for 50 contracts with a limit price of 40000 will be sent to the order book</em></p>
+<h2 id="market-orders">Market Orders</h2>
+<p>A market is an order to buy or sell a specified number of futures contracts at the best available price available in the order book. There is no guarantee that a market order will fill at any particular price. A market order may fill at a number of different prices, based on the quantity of the market order and the quantities of the existing orders on the order book at the time. Market orders are used when immediate execution is more important than trading costs.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User inputs: Quantity
+Market order example
+Quantity = 50 contracts
+Direction = Buy
+</code></pre></div></div>
+<p><em>A buy order for 50 contracts will be sent to the order book</em></p>
+<h2 id="stop-orders">Stop Orders</h2>
+<p>Stop orders are conditional orders which become active only after the market reaches a certain Trigger Price (also known as Stop Price). Stop orders serve as key risk management tools for traders, enabling them to limit losses on open trades. In addition to that, stop orders can also provide conditional entry into new positions.</p>
+<p>To enable users to place multiple stop orders with ease, margin for a stop order is blocked only when it is triggered. This means that if there isn’t sufficient margin available when a stop order is triggered, it will be cancelled.</p>
+<p>It is important to note that currently only <strong>Mark Price</strong> can be used to specify the Trigger Price of a stop order. In the case of a Buy stop order, the stop price must be below the current Mark Price. Correspondingly, for a Sell stop order, the stop price must be above the current Mark Price.</p>
+<p>A stop order thus has three states:</p>
+<ul>
+<li><em>Untriggered</em>- Market has not reached the Trigger Price.</li>
+<li><em>Triggered</em> - Market has reached the Trigger Price. The stop order has become active and has entered the order book.</li>
+<li><em>Filled</em> - After getting activated, the stop order has been filled.</li>
+</ul>
+<p>Delta Exchange currently offers three types of stop orders:</p>
+<ul>
+<li>
+<p><strong>Stop market order</strong> - When the stop order is triggered, a market order is sent to the order book.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  User inputs: Stop Price, Quantity
+  Stop market order example
+  Quantity = 50 contracts
+  Stop price = 3800
+  Direction = Buy
+</code></pre></div> </div>
+<p><em>A buy market order for 50 contracts will be sent to the order book when Mark Price goes above 3800</em></p>
+</li>
+<li>
+<p><strong>Stop limit order</strong> - When the stop order is triggered, a limit order is sent to the order book.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  User inputs: Stop Price, Limit Price, Quantity
+  Stop limit order example
+  Quantity = 50 contracts
+  Stop price = 3800
+  Limit price = 3750
+  Direction = Buy
+</code></pre></div> </div>
+<p><em>A buy limit order for 50 contracts with a limit price of 3750 will be sent to the order book when Mark Price goes above 3800</em></p>
+</li>
+<li>
+<p><strong>Trailing stop order</strong> - In this order type, the stop price follows the market at a fixed distance (known as the Trail Amount) when the market is moving in favour of the trader. However, stop price remains unchanged when the market is moving against the trader. This feature of trailing stop orders enables a trader to specify a limit on the maximum possible loss, without setting a limit on the maximum possible gain. When the market reaches the trigger price, a market order is sent to the other book.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  User inputs: Stop Price, Trail Amount, Quantity
+  Trailing stop order example
+  Quantity = 50 contracts
+  Trail Amount = 40 (Trail Amount would be negative for Sell orders)
+  Direction = Buy
+</code></pre></div> </div>
+<p><em>For this order, the Trigger Price will follow the Mark Price at a distance of 40 when the Mark Price is going down. And, a Buy market order of 50 contracts will be sent to the order book when Mark Price rises by 40.</em></p>
+</li>
+</ul>
+<h2 id="bracket-orders-deprecated">Bracket Orders (deprecated)</h2>
+<p>** Please use reduce-only orders to create the functionality offered by bracket orders.**</p>
+<p>A bracket order lets a trader to ‘bracket’ any given order with two opposite-side orders, i.e. take-profit and stoploss order. The take-profit order is a market order which is triggered at a pre-defined level and aims to lock-in profits. And, the stoploss order is a stop market order to limit losses. When one of these two orders (take-profit or stoploss) gets executed, the other order will automatically get cancelled.</p>
+<p>A bracket order can be placed along with a buy or sell order. In this case, the take-profit and stoploss orders are placed in the order book as soon as the main order is executed. Alternatively, a bracket order can be placed for a position that is already open. In either case, bracket orders are inextricably linked to an open position. As the position sizes changes, the quantity specified in the take-profit and stoploos orders changes in tandem.</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>User inputs: Quantity, Limit Price, Take-Profit Level, Stoploss Level
+Bracket order example
+Quantity = 50 contracts
+Limit price = 4000
+Take-profit Level = 4500
+Stoploss level = 3800
+Direction = Buy
+</code></pre></div></div>
+<p><em>First a limit order to buy 50 contracts at a limit price of 4000 would be sent to the order book. Once this order is executed, two new orders would be created: (a) a take-profit market order to sell 50 contracts with a trigger price of 4500 and (b) a stop market order with a Trigger Price of 3800.</em></p>
+<h1 id="advanced-attributes-for-orders">Advanced Attributes for Orders</h1>
+<h2 id="order-validity-attributes">Order Validity Attributes</h2>
+<ul>
+<li>
+<p><strong>Immediate or cancel (IOC)</strong></p>
+<p>An order which is marked as IOC is executed immediately and any unfilled portion of the order is cancelled. All market orders are by default marked as IOC. Limit orders can be marked as IOC to guarantee immediate execution at the specified price or better. However, if the order cannot be filled completely, the unfilled portion will be cancelled.</p>
+</li>
+<li>
+<p><strong>Fill or Kill (FOK)</strong></p>
+<p>An order which is marked as FOK is executed immediately and completely or not all at. This implies that the order must be filled in its entirety or cancelled.</p>
+</li>
+<li>
+<p><strong>Good till cancelled (GTC)</strong></p>
+<p>An order which is marked as GTC remains in effect until it is executed or cancelled by the trader. All limit orders are by default marked as GTC.</p>
+</li>
+</ul>
+<h2 id="order-execution-attributes">Order Execution Attributes</h2>
+<ul>
+<li>
+<p><strong>Post only</strong></p>
+<p>A limit order that is marked as post only is accepted into the order book only it would not be immediately match with an existing order in the order book. Marking a limit order post-only ensures that: (a) the order adds to the liquidity rather than takes liquidity from the order book, and (b) the traders will earn a maker rebate when the order is executed.</p>
+</li>
+<li>
+<p><strong>Reduce only</strong></p>
+<p>An order that is marked as reduce only can only reduce a position and would be cancelled if it would result in increasing the position. While the reduce only flag can be used with any order type, it is most useful when combined with stop orders. A reduce only stop order will only close an existing position and thus can serve as stop loss order for a position.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
